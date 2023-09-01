@@ -1,22 +1,26 @@
+""" Test module for math functions. """
+
 import unittest
 
 from libtemp.math import add, multiply
 
 class MathTests(unittest.TestCase):
-    def setUp(self):
-        # NOTE: Method to initialize test case components
-        pass
+    """ Test case for the template library math functions. """
 
-    def tearDown(self):
-        # NOTE: Method to shut down test case components
-        pass
+    def setUp(self) -> None:
+        """ Method to initialize test case components. """
 
-    def test_add(self):
+    def tearDown(self) -> None:
+        """ Method to shut down test case components. """
+
+    def test_add(self) -> None:
+        """ Test add function. """
         result = add(1.0, 2.0)
         self.assertIsInstance(result, float)
         self.assertEqual(result, 3.0)
 
-    def test_multiply(self):
+    def test_multiply(self) -> None:
+        """ Test multiply function. """
         result = multiply(1.0, 2.0)
         self.assertIsInstance(result, float)
         self.assertEqual(result, 2.0)

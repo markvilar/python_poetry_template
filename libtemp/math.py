@@ -1,5 +1,9 @@
-def add(x, y):
-    return x+y
+""" Module for math functions. """
 
-def multiply(x, y):
-    return x*y
+def add(first: float, second: float):
+    """ Adds two floating point numbers. """
+    return first + second
+
+def multiply(first: float, second: float) -> float:
+    """ Multiplies two floating point numbers. """
+    return first * second

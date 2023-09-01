@@ -1,6 +1,10 @@
+""" 
+Setup file for the template library package.
+"""
+
 from setuptools import find_packages, setup
 
-with open("README.md", "r") as handle:
+with open("README.md", "r", encoding="UTF-8") as handle:
     long_description = handle.read()
 
 setup(

@@ -1,4 +1,7 @@
 # Python Project Template
+![ci](https://github.com/markvilar/python_project_template/actions/workflows/ci/badge.svg)
+![pylint](https://github.com/markvilar/python_project_template/actions/workflows/pylint/badge.svg)
+
 Repository template for Python projects. The repository includes support for 
 the following tools:
 * pipenv - management of virtual environments and dependencies

@@ -1,6 +1,6 @@
 import unittest
 
-from lib.math import add, multiply
+from libtemp.math import add, multiply
 
 class MathTests(unittest.TestCase):
     def setUp(self):

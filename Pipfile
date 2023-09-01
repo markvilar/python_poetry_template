@@ -12,3 +12,8 @@ twine = "*"
 
 [requires]
 python = "3.10"
+
+[scripts]
+tests = "python -m unittest"
+main = "python -m main"
+build = "python -m setup bdist_wheel sdist"

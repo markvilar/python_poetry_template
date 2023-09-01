@@ -1,6 +1,6 @@
 import unittest
 
-from lib.common import concatenate_strings
+from libtemp.common import concatenate_strings
 
 class MathTests(unittest.TestCase):
     def setUp(self):

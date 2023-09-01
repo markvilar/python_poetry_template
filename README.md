@@ -21,8 +21,16 @@ pip3 install --user pipenv
 # Install dependencies and setup environment
 pipenv install --dev
 
-# Activate the environment
+# Activate an interactive shell for the virtual environment
 pipenv shell
+```
+
+## Executing pipenv scripts
+
+```sh
+pipenv run tests
+pipenv run main
+pipenv run build
 ```
 
 ## Building binaries and sources
@@ -35,10 +43,12 @@ python setup.py bdist_wheel sdist
 
 ```sh
 # Run specific tests
-python -m unittest tests/math_tests.py
+python -m unittest tests/test_common.py
+python -m unittest tests/test_math.py
 
 # Run specific tests in verbose mode
-python -m unittest -v tests/math_tests.py
+python -m unittest -v tests/test_common.py
+python -m unittest -v tests/test_math.py
 ```
 
 ## Publishing the project

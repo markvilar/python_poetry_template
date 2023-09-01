@@ -1,10 +1,10 @@
 # Python Project Template
 Repository template for Python projects. The repository includes support for 
 the following tools:
-* pipenv
-* setuptools
-* pytest
-* twine
+* pipenv - management of virtual environments and dependencies
+* setuptools - management of package setup
+* pytest - unit tests
+* twine - remote repository interaction
 
 ## Setting up a virtual environment
 
@@ -31,11 +31,14 @@ pipenv shell
 python setup.py bdist_wheel sdist
 ```
 
-## Running the tests
+## Running tests
 
 ```sh
-# Run the tests in the test directory
-python -m pytest test
+# Run specific tests
+python -m unittest tests/math_tests.py
+
+# Run specific tests in verbose mode
+python -m unittest -v tests/math_tests.py
 ```
 
 ## Publishing the project

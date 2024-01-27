@@ -25,14 +25,18 @@ setup(
         "Operating System :: OS Independent",
     ],
     install_requires = [
-        "bson >= 0.5.10"
-        "icecream >= 2.0.0"
-        "loguru >= 0.7.0"
-        "result"
-        "tqdm >= 4.0.0"
+        "icecream",
+        "loguru",
+        "result",
+        "tqdm"
     ],
     extras_require = {
-        "dev": ["pytest>=7.0"],
+        "dev": [
+            "build",
+            "pytest",
+            "setuptools",
+            "twine"
+        ],
     },
     test_suite = "tests",
     python_requires = ">=3.10",

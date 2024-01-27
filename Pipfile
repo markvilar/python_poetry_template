@@ -4,8 +4,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-icecream="*"
-loguru="*"
+icecream = "*"
+loguru = "*"
+result = "*"
+tqdm = "*"
 
 [dev-packages]
 pytest = "*"

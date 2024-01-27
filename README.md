@@ -59,3 +59,17 @@ python -m unittest -v tests/test_math.py
 ```sh
 twine upload --repository python_template_project dist/*
 ```
+
+## Troubleshooting
+
+### Reinstalling the virtual environment
+
+Reinstallation of the pipenv virtual environment can be necessary to update the
+python version of the environment. In order to do this, execute the following
+commands:
+
+```sh
+pipenv --rm
+pipenv install --python <python_version>
+pipenv install --dev
+```

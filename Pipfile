@@ -10,6 +10,7 @@ result = "*"
 tqdm = "*"
 
 [dev-packages]
+build = "*"
 pytest = "*"
 setuptools = "*"
 twine = "*"

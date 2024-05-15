@@ -1,14 +1,13 @@
-# Benthoscan
+# Python Template Project
 
-![ci](https://github.com/markvilar/benthoscan/actions/workflows/ci.yml/badge.svg)
-![pylint](https://github.com/markvilar/benthoscan/actions/workflows/pylint.yml/badge.svg)
+![ci](https://github.com/markvilar/python_project_template/actions/workflows/ci.yml/badge.svg)
+![pylint](https://github.com/markvilar/python_project_template/actions/workflows/pylint.yml/badge.svg)
 
-Benthoscan is a small API for 3D reconstruction and registration based on images. Benthoscan wraps 
-Metashapes Python API for reconstruction and implements a registration module with Open3D.
-
+This is a small template repository for creating python projects with a modern toolchain. 
 The repository includes support for the following tools:
-* poetry - package management and build system
-* pytest - unit tests
+- poetry - package management and build system
+- pytest - unit tests
+- black - code linting
 
 
 ## Getting started
@@ -23,8 +22,8 @@ pip3 install --user poetry
 ### Configure the project environment
 
 ```shell
-# Set the Python version to 3.11
-poetry env use 3.11
+# Set the Python version
+poetry env use <python_version>
 
 # Validate the environment configuration
 poetry env info
@@ -38,6 +37,9 @@ poetry install
 
 # Build the project
 poetry build
+
+# Add new packages
+poetry add <package-name>
 ```
 
 ### Running unit tests

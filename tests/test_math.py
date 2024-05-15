@@ -1,29 +1,15 @@
-""" Test module for math functions. """
-
-import unittest
+"""Test module for math functions."""
 
 from libtemp.math import add, multiply
 
-class MathTests(unittest.TestCase):
-    """ Test case for the template library math functions. """
+def test_add() -> None:
+    """Unit test for the add function."""
+    result = add(1.0, 2.0)
+    assert isinstance(result, float)
+    assert result == 3.0
 
-    def setUp(self) -> None:
-        """ Method to initialize test case components. """
-
-    def tearDown(self) -> None:
-        """ Method to shut down test case components. """
-
-    def test_add(self) -> None:
-        """ Test add function. """
-        result = add(1.0, 2.0)
-        self.assertIsInstance(result, float)
-        self.assertEqual(result, 3.0)
-
-    def test_multiply(self) -> None:
-        """ Test multiply function. """
-        result = multiply(1.0, 2.0)
-        self.assertIsInstance(result, float)
-        self.assertEqual(result, 2.0)
-
-if __name__ == "__main__":
-    unittest.main()
+def test_multiply() -> None:
+    """Unit test for the multiple function."""
+    result = multiply(1.0, 2.0)
+    assert isinstance(result, float)
+    assert result == 2.0

@@ -132,3 +132,7 @@ dmypy.json
 *.swa
 *.swo
 *.swp
+
+# env files
+*.env
+.env*

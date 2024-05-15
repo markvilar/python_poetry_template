@@ -1,0 +1,27 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "python_template_project"
+version = "0.0.1"
+description = "A template for creating python projects with a basic, but modern toolchain"
+authors = ["Martin Kvisvik Larsen <martin.kvisvik.larsen@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "libtemp", from="src"}]
+package-mode = true
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+loguru = "^0.7.2"
+python-dotenv = "^1.0.1"
+result = "^0.16.1"
+toml = "^0.10.2"
+tqdm = "^4.66.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+black = "^24.4.2"
+
+[tool.poetry.scripts]
+main_script = "libtemp.entrypoint:main"

@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "python_template_project"
 version = "0.0.1"
-description = "A template for creating python projects with a basic, but modern toolchain"
+description = "A template for creating standalone python projects with a basic, but modern toolchain"
 authors = ["Martin Kvisvik Larsen <martin.kvisvik.larsen@hotmail.com>"]
 readme = "README.md"
 packages = [{include = "libtemp", from="src"}]
@@ -18,8 +18,10 @@ arrow = "^1.3.0"
 click = "^8.1.7"
 loguru = "^0.7.2"
 msgpack = "^1.1.0"
+numpy = "^2.2.0"
+plotly = "^5.24.1"
+polars = "^1.17.1"
 python-dotenv = "^1.0.1"
-result = "^0.16.1"
 tqdm = "^4.66.2"
 
 

@@ -1,7 +1,7 @@
 # Python Template Project
 
-![ci](https://github.com/markvilar/python_project_template/actions/workflows/ci.yml/badge.svg)
-![pylint](https://github.com/markvilar/python_project_template/actions/workflows/pylint.yml/badge.svg)
+![Ubuntu](https://github.com/markvilar/python_project_template/actions/workflows/ubuntu.yml/badge.svg)
+![Linter](https://github.com/markvilar/python_project_template/actions/workflows/pylint.yml/badge.svg)
 
 This is a small template repository for creating python projects with a modern toolchain. 
 The repository includes support for the following tools:
